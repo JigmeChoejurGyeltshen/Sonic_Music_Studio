@@ -68,7 +68,8 @@ nav ul li a {
   width: 0%;                        /* Start with zero width */
   height: 2px;                      /* Border thickness */
   background:
-     linear-gradient(45deg, #133E87, #7E60BF, #FF6500, #133E87, #7E60BF);        /* Border color */
+  linear-gradient(45deg, #133E87, #7E60BF, #FF6500, #133E87, #7E60BF);        /* Border color */
+  transition: width 0.4s ease;        /* Border color */
   transition: width 0.4s ease;      /* Smooth transition for width change */
 }
 
