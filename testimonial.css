@@ -67,7 +67,8 @@ nav ul li a {
   bottom: 0;                        /* Align to the bottom of the text */
   width: 0%;                        /* Start with zero width */
   height: 2px;                      /* Border thickness */
-  background-color: #0D7C66;        /* Border color */
+  background:
+     linear-gradient(45deg, #133E87, #7E60BF, #FF6500, #133E87, #7E60BF);        /* Border color */
   transition: width 0.4s ease;      /* Smooth transition for width change */
 }
 
