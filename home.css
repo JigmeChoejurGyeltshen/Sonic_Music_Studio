@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Alegreya", serif;
+    scroll-behavior: smooth;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: fixed;
+    left: 90%;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px ;
+    transition: all 0.3s;
+}
+
+#container {
+    width: 100%;
+    height:100vh;
+    background: 
+      linear-gradient(rgba(50, 20, 30, 0.5), rgba(50, 20, 30, 0.5)),
+      url(images/country-musicians-lifestyle-indoors_23-2151169629.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    width: 6rem;
+    margin: auto 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+    margin-right: 45px;
+    gap: 100px;
+    z-index: 20;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: snow;
+    /* transition: border-bottom 0.3s ease-in-out; */
+    font-size: 1.4rem;
+}
+
+
+.slide-border {
+    position: relative;               /* Ensures pseudo-element is positioned relative to the anchor tag */                   /* Text color */
+    text-decoration: none;            /* Remove default underline */
+    padding-bottom: 5px;              /* Space for the bottom border */
+  }
+
+.slide-border::after {
+    content: '';                      /* Creates the pseudo-element */
+    position: absolute;               /* Position it relative to the anchor */
+    left: 0;                          /* Start from the left */
+    bottom: 0;                        /* Align to the bottom of the text */
+    width: 0%;                        /* Start with zero width */
+    height: 2px;                      /* Border thickness */
+    background-color: #0D7C66;               /* Border color */
+    transition: width 0.4s ease;      /* Smooth transition for width change */
+}
+  
+.slide-border:hover::after {
+    width: 100%;                      /* Expand the border to full width on hover */
+}
+
+#home {
+    padding-top:20px ;
+}
+
+
+.liquid-text {
+    font-weight: bold;
+    color: transparent;
+    position: relative;
+    font-size:8rem ;
+    text-align: center;
+    background: linear-gradient(45deg, grey, yellow, pink, orange, red);
+    background-size: 250% ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: liquidMove 3s ease-in-out infinite;
+}
+
+@keyframes liquidMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+h2 {
+    color: #CDFADB;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.fade-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 40px;
+}
+
+.footer-nav {
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.footer-nav ul li a {
+    margin: 20px;
+}
+
+  
+.footer-container p {
+    margin:0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer i {
+    color: white;
+    margin: 30px 20px;
+    font-size: 1.2rem;
+}
+
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-100%); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); 
+    }
+}
+
+@media (max-width:480px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 130px;
+        height: 200px;
+        background: transparent;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul.active {
+        display: block;
+        text-align: center;
+        animation: slideIn 0.5s forwards ease-in-out;
+        position: fixed;
+        z-index: 2;
+        background-color: black;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    #logo {
+        width: 4rem;
+    }
+
+    .liquid-text {
+        font-size: 4rem;
+    }
+
+    .fade-text {
+        font-size: 2rem;
+    }
+
+    
+}
+
+
+@media (min-width:481px) and (max-width:768px) {
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 130px;
+        height: 200px;
+        background: transparent;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul.active {
+        display: block;
+        text-align: center;
+        animation: slideIn 0.5s forwards ease-in-out;
+        position: fixed;
+        z-index: 2;
+        background-color: black;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .liquid-text {
+        font-size: 5rem;
+    }
+
+    .fade-text {
+        font-size: 3rem;
+    }
+
+    #logo {
+        width: 5rem;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .footer-container p {
+        font-size: 12px;
+    }
+
+}
+
+

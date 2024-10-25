@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya", serif;
+  scroll-behavior: smooth;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  left: 90%;
+  z-index: 2;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+  transition: all 0.3s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+}
+
+#logo {
+  width: 6rem;
+  margin: auto 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 50px;
+  gap: 100px;
+  z-index: 20;
+}
+
+nav ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  color: snow;
+  font-size: 1.4rem;
+}
+
+.slide-border {
+  position: relative;               /* Ensures pseudo-element is positioned relative to the anchor tag */                   /* Text color */
+  text-decoration: none;            /* Remove default underline */
+  padding-bottom: 5px;              /* Space for the bottom border */
+}
+
+.slide-border::after {
+  content: '';                      /* Creates the pseudo-element */
+  position: absolute;               /* Position it relative to the anchor */
+  left: 0;                          /* Start from the left */
+  bottom: 0;                        /* Align to the bottom of the text */
+  width: 0%;                        /* Start with zero width */
+  height: 2px;                      /* Border thickness */
+  background-color: #0D7C66;        /* Border color */
+  transition: width 0.4s ease;      /* Smooth transition for width change */
+}
+
+.slide-border:hover::after {
+  width: 100%;                      /* Expand the border to full width on hover */
+}
+
+section {
+  text-align: center;
+  background-color: antiquewhite;
+  background: linear-gradient(rgba(50, 20, 30, 0.5), rgba(50, 20, 30, 0.5)),
+    url(images/24853.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#one {
+  padding: 20px;
+}
+
+#one h1 {
+  padding: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+#one p {
+  text-align: center;
+  padding: 20px 90px;
+  font-size: 20px;
+  margin: 0px 60px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+form input {
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  margin: 20px 0px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 10px 10px antiquewhite;
+  background-color: transparent;
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+/* animation */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, transform 0.3s;
+  animation: slideIn 0.8s ease-in-out;
+  color: snow;
+}
+input:focus,
+textarea:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 10px #28a745;
+  transform: scale(1.05) rotate(1deg);
+  outline: none;
+}
+input:hover,
+textarea:hover {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 5px #ccc;
+  }
+  50% {
+    box-shadow: 0 0 15px #007bff;
+  }
+  100% {
+    box-shadow: 0 0 5px #ccc;
+  }
+}
+p {
+  animation: popUp 1.5s ease-out;
+  transform-origin: top left;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#one button {
+  margin: 20px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+#one button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+#two {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#icon {
+  display: flex;
+  padding: 70px 10px;
+  margin: 40px 0px;
+}
+
+#three {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+#one,
+#two {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.footer-nav {
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.footer-nav ul li a {
+  margin: 20px;
+}
+
+
+.footer-container p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+footer i {
+  color: white;
+  margin: 30px 20px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        width: 130px;
+        height: 200px;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul.active {
+        display: block;
+        text-align: center;
+        animation: slideIn 0.5s forwards ease-in-out;
+        position: fixed;
+        z-index: 2;
+        background-color: black;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+      font-size: 0.8rem;
+  }
+
+  #logo {
+    width: 4rem;
+  }
+
+    #section {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+     #one p {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+     }     
+        
+     #icon {
+      margin: 0 auto;
+     }
+    
+
+    #one button {
+      width: 200px;
+    }
+
+    #one input {
+      margin: 0 auto;
+    }
+
+    #one textarea {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    
+    form input {
+      width: 70%;
+    }
+
+    #two {
+        display: block;
+    }
+    #three label, input {
+        width: 70%;
+        margin: 15px auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    width: 130px;
+    height: 220px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    position: fixed;
+    z-index: 2;
+    background-color: black;
+  }
+
+  nav ul.active {
+    display: block;
+    text-align: center;
+    animation: slideIn 0.5s forwards ease-in-out;
+  }
+
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+}
+
+  #logo {
+    width: 5rem;
+  }
+
+  #section {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  #one p {
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #one button {
+    width: 200px;
+  }
+
+
+  #icon {
+    padding: 50px;
+  } 
+
+  input,
+  button {
+    font-size: 16px;
+  }
+
+  #one input {
+    margin: 0 auto;
+  }
+  #two {
+    display: block;
+  }
+  #three label, input {
+    padding-left: 50px;
+    width: 60%;
+   
+  }
+}

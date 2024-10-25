@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <section>
+        <nav>
+            <img id="logo" src="images/music-studio-logo-design-colorful-vector-28367330-removebg-preview.png" alt="Logo">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="slide-border">Home</a></li>
+                <li><a href="about.html" class="slide-border">About</a></li>
+                <li><a href="services.html" class="slide-border">Services</a></li>
+                <li><a href="testimonial.html" class="slide-border">Testimonial</a></li>
+                <li><a href="contact.html" class="slide-border">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="one">
+            <h1>Contact Us</h1>
+            <p >Get in touch and ask us anything. The difference between the booking and facilities available. We will be so happy to attend your calls and clear the problems.</p>
+           <form action="">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="email" placeholder="Email Address">
+            <input type="number" id="number" placeholder="Mobile Number">
+            <input type="text" id="text" placeholder="Interested In">
+            <textarea name="help" id="help" cols="30" rows="10" placeholder="How can we help?"></textarea>
+           </form>
+            <button onclick="tap()">Send Your Message</button>
+        </div>
+        <hr>
+        <div id="two">
+            
+            <div id="icon">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846575.5767225527!2d-119.07124006173115!3d34.01985764759857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbt!4v1729579632542!5m2!1sen!2sbt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="three">
+            <label for="address" ><i class="fa-solid fa-address-book"></i>Address:</label>
+            <input type="text" id="address" placeholder="Thimphu, Bhutan">
+            <label for="email"><i class="fa-solid fa-envelope"></i>Email:</label>
+            <input type="text" id="email" placeholder="tshering@gmail.com">
+            <label for="phone"><i class="fa-solid fa-phone"></i>phone:</label>
+            <input type="number" id="number" placeholder="17984827">
+        </div>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <ul>
+                <li><a href="index.html" class="slide-border">Home</a></li>
+                <li><a href="about.html" class="slide-border">About</a></li>
+                <li><a href="services.html" class="slide-border">Services</a></li>
+                <li><a href="testimonial.html" class="slide-border">Testimonial</a></li>
+                <li><a href="contact.html" class="slide-border">Contact</a></li>
+            </ul>
+            </nav>
+            <div id="social-icons">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-soundcloud"></i></a>
+                <a href=""><i class="fa-brands fa-spotify"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Sonic Music Studio. All Rights Reserved.</p>
+    </footer>
+
+   <script src="contact.js"></script>
+   
+   
+</body>
+</html>
