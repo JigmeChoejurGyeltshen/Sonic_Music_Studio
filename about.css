@@ -227,7 +227,7 @@ footer i {
         top: 21px;
         right: -5px;
         width: 130px;
-        height: 220px;
+        height: 180px;
         background: transparent;
         align-items: center;
         opacity: 0;
@@ -250,7 +250,7 @@ footer i {
     
 
     nav ul li {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     nav ul li a {
