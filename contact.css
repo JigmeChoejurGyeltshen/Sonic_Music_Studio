@@ -273,8 +273,8 @@ footer i {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 30px;
-        right: 15px;
+        top: 21px;
+        right: -5px;
         width: 130px;
         height: 200px;
         align-items: center;
@@ -288,12 +288,18 @@ footer i {
     }
 
     nav ul.active {
-        display: block;
-        text-align: center;
-        animation: slideIn 0.5s forwards ease-in-out;
-        position: fixed;
-        z-index: 2;
-        background-color: black;
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      position: fixed;
+      z-index: 2;
+      background-color: black;
+    }
+
+    nav ul.active {
+      display: block;
+      text-align: center;
+      animation: slideIn 0.5s forwards ease-in-out;
     }
 
     nav ul li {
@@ -354,13 +360,13 @@ footer i {
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 30px;
-    right: 15px;
+    right: 10px;
     width: 130px;
     height: 220px;
     align-items: center;

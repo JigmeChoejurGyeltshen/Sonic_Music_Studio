@@ -189,8 +189,8 @@ footer i {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 30px;
-    right: 15px;
+    top: 21px;
+    right: -5px;
     width: 130px;
     height: 220px;
     background: transparent;
@@ -276,7 +276,7 @@ nav ul li a {
     flex-direction: column;
     position: absolute;
     top: 30px;
-    right: 15px;
+    right: 10px;
     width: 130px;
     height: 220px;
     background: transparent;

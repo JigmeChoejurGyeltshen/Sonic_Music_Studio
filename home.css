@@ -173,10 +173,10 @@ footer i {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 30px;
-        right: 15px;
+        top: 21px;
+        right: -5px;
         width: 130px;
-        height: 200px;
+        height: 220px;
         background: transparent;
         align-items: center;
         opacity: 0;
@@ -206,6 +206,10 @@ footer i {
         font-size: 0.8rem;
     }
 
+    #home {
+        padding-top: 50px;
+    }
+
     #logo {
         width: 4rem;
     }
@@ -229,9 +233,9 @@ footer i {
         flex-direction: column;
         position: absolute;
         top: 30px;
-        right: 15px;
+        right: 10px;
         width: 130px;
-        height: 200px;
+        height: 220px;
         background: transparent;
         align-items: center;
         opacity: 0;
