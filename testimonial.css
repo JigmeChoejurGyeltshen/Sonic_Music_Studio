@@ -109,11 +109,11 @@ section {
 }
 
 h1 {
-  text-align: center;
-  font-style: normal;
-  color: white;
-  margin-bottom: 50px;
-  font-size: 6rem;
+  text-align: center !important;
+  font-style: normal !important;
+  color: white !important;
+  margin-bottom: 50px !important;
+  font-size: 6rem !important;
 }
 
 .img {
@@ -147,12 +147,8 @@ span {
   color: lightskyblue;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0px;
-  padding-bottom: 40px;
+.card {
+  border-radius: 0% !important;
 }
 
 .footer-nav {
@@ -160,13 +156,17 @@ footer {
   margin: 50px 0px;
 }
 
-.footer-container p {
+.footer-nav ul li a {
+  margin: 20px;
+}
+
+.card-footer p {
   margin: 0;
   font-size: 14px;
   color: #ccc;
 }
 
-footer i {
+#social-icons i {
   color: white;
   margin: 30px 20px;
   font-size: 1.2rem;
@@ -267,6 +267,10 @@ nav ul li a {
   h1 {
     font-size: 2rem;
   }
+
+  .nav-footer {
+    margin: 0px;
+  }
 }
 
 
@@ -334,5 +338,9 @@ section {
 
   .Talks {
     padding: 15px;
+  }
+
+  .nav-footer {
+    margin: 0px;
   }
 }

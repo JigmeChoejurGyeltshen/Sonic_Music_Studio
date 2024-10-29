@@ -79,7 +79,7 @@ body {
     background-size: cover; 
     background-color: rgb(90, 90, 90); 
     background-position: center; 
-    color: white; 
+    color: white !important; 
 } 
  
  
@@ -143,13 +143,9 @@ h1 {
     margin-top: 20px;
 } 
 
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0px;
-    padding-bottom: 40px;
-}
+.card {
+    border-radius: 0% !important;
+} 
 
 .footer-nav {
     justify-content: center;
@@ -161,17 +157,18 @@ footer {
 }
 
   
-.footer-container p {
+.card-footer p {
     margin: 0;
     font-size: 14px;
     color: #ccc;
 }
 
-footer i {
+#social-icons i {
     color: white; 
     margin: 30px 20px;
     font-size: 1.2rem;
 }
+
 
 @keyframes slideIn { 
     from { 
@@ -213,6 +210,7 @@ footer i {
         position: fixed;
         z-index: 2; 
         background-color: black;
+        padding: 0px;
     } 
  
     nav ul li { 
@@ -250,7 +248,12 @@ footer i {
      
     a{ 
         font-size: 1rem; 
-        } 
+    }
+
+    .footer-nav {
+        margin: 0px;
+    }
+
  
 }
 
@@ -286,6 +289,7 @@ footer i {
         position: fixed;
         z-index: 2;
         background-color: black; 
+        padding: 0px;
     } 
      
     nav ul li { 
@@ -304,5 +308,8 @@ footer i {
         margin-left: 0px;
     }
     
+    .footer-nav {
+        margin: 0px;
+    }
 }
     

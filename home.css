@@ -62,7 +62,6 @@ nav ul li a {
     font-size: 1.4rem;
 }
 
-
 .slide-border {
     position: relative;               /* Ensures pseudo-element is positioned relative to the anchor tag */                   /* Text color */
     text-decoration: none;            /* Remove default underline */
@@ -88,7 +87,6 @@ nav ul li a {
 #home {
     padding-top:20px ;
 }
-
 
 .liquid-text {
     font-weight: bold;
@@ -116,23 +114,15 @@ nav ul li a {
 }
 
 h2 {
-    color: #CDFADB;
-    font-size: 4rem;
-    text-align: center;
-    font-weight: 100;
+    color: #CDFADB !important;
+    font-size: 4rem !important;
+    text-align: center !important;
+    font-weight: 100 !important;
 }
 
 .fade-text {
     opacity: 0;
     transition: opacity 1s ease-in-out;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    padding-bottom: 40px;
 }
 
 .footer-nav {
@@ -145,16 +135,20 @@ footer {
 }
 
   
-.footer-container p {
+.card-footer p {
     margin:0;
     font-size: 14px;
     color: #ccc;
 }
 
-footer i {
-    color: white;
-    margin: 30px 20px;
-    font-size: 1.2rem;
+#social-icons i {
+    color: white !important;
+    margin: 30px 20px !important;
+    font-size: 1.2rem !important;
+}
+
+.card {
+    border-radius: 0% !important;
 }
 
 @keyframes slideIn {
@@ -196,6 +190,7 @@ footer i {
         position: fixed;
         z-index: 2;
         background-color: black;
+        padding: 0px;
     }
 
     nav ul li {
@@ -244,7 +239,7 @@ footer i {
     }
 
     nav ul li {
-        margin: 15px 0;
+        margin: 20px 0;
     }
 
     nav ul.active {
@@ -254,6 +249,7 @@ footer i {
         position: fixed;
         z-index: 2;
         background-color: black;
+        padding: 0px;
     }
 
     nav ul li a {
@@ -282,6 +278,10 @@ footer i {
 
     .footer-container p {
         font-size: 12px;
+    }
+
+    .footer-nav {
+        margin: 0px;
     }
 
 }

@@ -238,12 +238,8 @@ input {
   }
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 40px;
+.card {
+  border-radius: 0% !important;
 }
 
 .footer-nav {
@@ -256,13 +252,13 @@ footer {
 }
 
 
-.footer-container p {
+.card-footer p {
   margin: 0;
   font-size: 14px;
   color: #ccc;
 }
 
-footer i {
+#social-icons i {
   color: white;
   margin: 30px 20px;
   font-size: 1.2rem;

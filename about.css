@@ -67,7 +67,7 @@ nav ul li a {
     height: 2px;                      /* Border thickness */
     background:
      linear-gradient(45deg, #133E87, #7E60BF, #FF6500, #133E87, #7E60BF);        /* Border color */
-    transition: width 0.4s ease;      /* Smooth transition for width change */
+    transition: width 0.4s ease-in-out;      /* Smooth transition for width change */
 }
   
 .slide-border:hover::after {
@@ -102,6 +102,7 @@ div#aboutusContent p {
     text-align: left;
     font-size: 1.5rem;
     padding: 0px 150px 150px;
+    margin: 0px;
 }
 
 #teamMember {
@@ -176,12 +177,8 @@ h4 {
     color: #007bff;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0px;
-    padding-bottom: 40px;
+.card {
+    border-radius: 0% !important;
 }
 
 .footer-nav {
@@ -194,13 +191,13 @@ footer {
 }
 
   
-.footer-container p {
+.card-footer p {
     margin: 0;
     font-size: 14px;
     color: #ccc;
 }
 
-footer i {
+#social-icons i {
     color: white;
     margin: 30px 20px;
     font-size: 1.2rem;
@@ -246,6 +243,7 @@ footer i {
         position: fixed;
         z-index: 2;
         background-color: black;
+        padding: 0px;
     }
     
 
@@ -298,6 +296,10 @@ footer i {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
     }
+
+    .footer-nav {
+        margin: 0px;
+    }
     
 }
 
@@ -330,6 +332,7 @@ footer i {
         position: fixed;
         z-index: 2;
         background-color: black;
+        padding: 0px;
     }
 
     nav ul li {
@@ -356,6 +359,7 @@ footer i {
     div#aboutusContent p {
         font-size: 1.1rem; 
         padding: 5px 35px 60px;
+        margin: 0px;
     }
 
     #teamMember {
@@ -389,16 +393,10 @@ footer i {
     .memImage {
         border-top-right-radius: 40px;
         border-bottom-left-radius: 40px;
-        }
-
-
-    footer {
-        padding: 15px 0;
     }
-
-    footer p {
-        font-size: 12px;
+    
+    .footer-nav {
+        margin: 0px;
     }
-
    
 }
