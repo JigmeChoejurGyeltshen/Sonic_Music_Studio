@@ -269,7 +269,7 @@ nav ul li a {
     font-size: 2rem !important;
   }
 
-  .nav-footer {
+  .footer-nav {
     margin: 0px;
   }
 }
@@ -342,7 +342,7 @@ section {
     padding: 15px;
   }
 
-  .nav-footer {
+  .footer-nav {
     margin: 0px;
   }
 }

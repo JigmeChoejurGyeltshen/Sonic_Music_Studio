@@ -355,6 +355,10 @@ input {
         margin: 15px auto;
     }
 
+    .footer-nav {
+      margin: 0;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -440,5 +444,9 @@ input {
     padding-left: 50px;
     width: 60%;
    
+  }
+
+  .footer-nav {
+    margin: 0;
   }
 }
