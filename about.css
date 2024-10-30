@@ -153,8 +153,8 @@ div#aboutusContent p {
 }
 
 h4 {
-    font-weight: bolder;
-    color: snow;
+    font-weight: bolder !important;
+    color: snow !important;
 }
 
 .designation {

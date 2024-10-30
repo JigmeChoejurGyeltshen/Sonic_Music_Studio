@@ -14,4 +14,4 @@ setInterval(() => {
       fadeTextElement.style.opacity = 1;
       fadeIndex = (fadeIndex + 1) % fadeTexts.length;
     }, 1000); // Wait for fade-out to complete before changing text
-  }, 3000); // Total cycle time (3 seconds)
+  }, 2500); // Total cycle time (3 seconds)
