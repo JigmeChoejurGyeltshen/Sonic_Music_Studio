@@ -290,6 +290,7 @@ input {
       position: fixed;
       z-index: 2;
       background-color: black;
+      padding: 0;
     }
 
     nav ul.active {
@@ -382,6 +383,7 @@ input {
     position: fixed;
     z-index: 2;
     background-color: black;
+    padding: 0;
   }
 
   nav ul.active {
